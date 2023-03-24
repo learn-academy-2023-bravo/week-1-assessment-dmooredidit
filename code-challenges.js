@@ -19,117 +19,148 @@ const fruit4 = "kiwi"
 // Expected outcome: "cherry"
 
 // --------------------1) Create a function that takes in a number and determines if the given number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below.
+// Psuedo 
+                
+// const boilingPoint =  "212"
+// const numsArray = ["42", "350", "212"]
 
-// const (tempsArray)  = [42, 350, 212]
-// let boilingPoint = "212"
+// for (let boilingPoint = "212"; boilingPoint < numsArray; i++) {
+//   if (numsArray >= boilingPoint) {
+//     return `42 is below boing point`
+//   }
+//   if (numsArray === boilingPoint) {
+//     return `350 is at boinling point`
+//   }
+//   if  (numsArray <= boilingPoint) {
+//     return `212 is above boinling point`
+//   }
+//   else {
+//     return `something went wrong`
+//   }
+// }
+// const tempOne = 42
 
-//     for (let boilingPoint = 212; boilingPoint < tempsArray.lentgh; i++) {
+// const tempTwo = 350
 
-//       if tempsArray >= boilingPoint return `Temp is above boiling point`}{ 
-//       if else (const) (tempsArray === boilingPoint) return `Temp is at boing point`}{
-//       if else (const) tempsArray <= boingPoint return `Temp is below boiling point`}{
-//       else  return `Something went wrong`} 
-      
-//       console.log(tempsArray.lentgh)
+// const tempThree = 212
+
+// console.log(numsArray) 
 
 // Pseudo code:
-
-const temperature1 = 42
+// creat function that takes in number and determine if the that number is below, at, or above boiling point using conditional statements. 
+// input: array
+// output: 
+                
+// const temperature1 = 42
 // Expected output: "42 is below boiling point"
 
-const temperature2 = 350
+// const temperature2 = 350
 // Expected output: "350 is above boiling point"
 
-const temperature3 = 212
+// const temperature3 = 212
     // Expected output: "212 is at boiling point"
 
-    // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
+    //output ---> nothing happened. it just logged blank. No errors but no output either. I worked this one issue for about 7 hours. and could not figure out why it just would not log anything not even an error. 
+    // week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
+    // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
+    // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
+    // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ <-----
+
+
+// --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
 // Pseudo code:
+// combine 2 arrays using .concat and return length 
+// input: 2 arrays
+// output: 1 array
+// process: create new const called bothSeriesArray join the two arrays using .concat the console.log combined array.length. using .lentgh returns the number length of whatever your calling for the length on.  
 
 
-const padres1984WorldSeriesRuns = [`2`, `5`, `2`, `2`, `4`]
-const padres1998WorldSeriesRuns = [`6`, `3`, `5`, `3`]
+// const padres1984WorldSeriesRuns = [`2`, `5`, `2`, `2`, `4`]
+// const padres1998WorldSeriesRuns = [`6`, `3`, `5`, `3`]
 
-const combinedArray = padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns);
+// const bothSeriesArray = padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns)
 
-    //  console.log(combinedArray.length)
+// console.log(bothSeriesArray.length)
 
-    //  --->9 
-    // I've decided to go with the concat method because I do not fully understand how to execute a join just yet. Also .length will produce the number of items.
+    // Output ----> 9 (I had to console.log on an external practice page because my console.log is not working on my machine, but it assured me that I executed the code correctly)
+    // Explaination: I would go with the .concat method then just consolog the new array (bothSeries) .lenght because, if im not mistaken, join will merge both arrays to creat new number altogether.
 
     // Expected output: 9
 
+
     // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
-    // Pseudo code:
+    // Pseudo code: 
+    // split Bravo 2023 to convert into a string ""
+    //Reverse "Bravo 2023" to read "3202 ovarB"
+    // join
 
-    // const currentCohort = "Bravo 2023"
+const currentCohort = "Bravo 2023" 
 
-const currentCohort = [Bravo, 2023]
-
-currentCohort.reverse(currentCohort)
-
-    console.log(currentCohort)
+        // r = (currentCohort.split("")); (currentCohort.reverse(currentCohort)); (currentCohort).join
+        // c = (currentCohort.reverse(currentCohort))
+        // d = (currentCohort).join
+    
+        
+// console.log(r)
+    
 
     // Expected output: "3202 ovarB"
 
     // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
-    // Pseudo code:
+// Pseudo code:take in array use sort to sort temps largest to smallest
+    // input:  arrays
+    // output:  string
+    // preocess creat function to take arrays. consolelog my array(index) create let statement
+// output ----> .reverse is not a function all my notes said that I could do it the way I was doing it but it was not console logging. I kept getting reverse is not a function.
 
 const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
-    // const givenValueOne = 42
+    const givenValueOne = 42
+
+    for (let i = 0; i<myNumbers.length; i++) {
+    
+    console.log(givenValueOne[i])
+    }
+
+//----> undefined
+// undefined
+// undefined
+// undefined
+// undefined
+// undefined
+// undefined
+// undefined
+// undefined
+//  maybe i need one on one instructions to be able to break down these problems and get my process down so I know exactly what is going on with this code.
 
     // let givenValueOne = 42
     // let wanted = 2
-
-    // Let matchOne = myNumbers.find(item == 42) ;{
-    //     if (givenValue1 === item); return `${7}`
-    // }
-
-    // console.log(`last index number is 2`)
+    
 
     // Expected output: 7
 
-const givenValue2 = 10
+    const givenValue2 = 10
     // Expected output: 8
 
     // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
-    // Pseudo code:
+    // Pseudo code: take in array use sort to sort temps largest to smallest
+    // input: 2 arrays
+    // output: 1 new array
+    // preocess creat function to take in and sort arrays. using .sort to place all temps in order. use compare statements to compare temps against one another. 
 
 const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
     // Expected output: [82, 80, 79, 77, 76, 73, 72]
 
-// sanDiegoSummerTemperatures.sort(compareFunction);
+
 // console.log(sanDiegoSummerTemperatures)
 
-// {
-    
-// Function compareFunction(a, b)
-    // 1. < 0 ... a comes first
-    // 2. 0 ... nothing will change
-    // 3. > 0 ... b comes first
 
 
-// return a - b; 
-// }
-
-// let(sanDiegoSummerTemperatures.sort)
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
 
-// sanDiegoWinterTemperatures.sort(compareFunction);
-// console.log(sanDiegoWinterTemperatures)
-{
     
-// Function compareFunction(a, b)
-    // 1. < 0 ... a comes first
-    // 2. 0 ... nothing will change
-    // 3. > 0 ... b comes first
 
-
-return a - b; 
-
-}

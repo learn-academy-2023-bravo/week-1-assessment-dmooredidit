@@ -14,9 +14,11 @@ Researched answer:
 
 1. What is git? What is the difference between git and Github?
 
-Your answer: Git is basically a central hub that acts as the cloud connected developers. Projects can be stored and called from Git as well as shared with a team for pair or mob programming, It is also, a hub where developers showcase public and/or store private code.
+Your answer: Github is basically a centralized location that acts as the cloud allowing developers to store and share their code projects. Projects can be stored and called from Git as well as shared with a team for pair or mob programming, It is also, a hub where developers showcase public and/or store private code.
 
-Researched answer: Git is a developer platform that allows  building, scaling and delivering secure software 
+Researched answer: Git is a software that focuses on code sharing and version control. Github lives in the "cloud" and is a location to stores all information and copies of a Git repository in one centralized location. This allows for easy file sharing.
+
+reference:https://www.simplilearn.com/tutorials/git-tutorial/git-vs-github#:~:text=While%20Git%20is%20a%20tool,copies%20of%20a%20Git%20repository.
 
 2. Which JavaScript operators will return a Boolean value?
 
@@ -26,9 +28,14 @@ Researched answer: The Boolean value of an expression of all comparisons and con
 
 3. What is an index? What is the difference between index and value?
 
-Your answer: index is a place. is you count the index, you will be counting character spacing including the blank spaces
+Your answer: starting at 0, an index is simply the space that is "taken up" and is housing to a value. 
+            Value is the actual data that lives in the index space.
+            Ex. [marcus, dandre, bobby, joshua, jose, jr,]
+                            ^
+Index: 1
+Value: dandre
 
-Researched answer:
+Researched answer: Arrays are 
 
 4. Compare and contrast arrays and strings. Please include ways in which they are the same and ways in which they are different.
 

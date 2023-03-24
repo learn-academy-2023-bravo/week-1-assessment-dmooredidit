@@ -20,7 +20,7 @@ const cohort = "LEARN 2023"
 // console.log(cohort.length)
 
 // a) Your answer: 2
-// b) Verify and explain: ---> "10" if I'm not mistaken, .length of the index not the actual text.
+// b) Verify and explain: ---> "10" if I'm not mistaken, .length will produce how many the valuse stored in the index
 
 // --------------------2) What will this log? Error or nothing 
 
@@ -37,7 +37,7 @@ const index = 1
 // console.log(languages[index])
 
 // a) Your answer: JavaScript
-// b) Verify and explain: ---> Ruby because we called the index to start at 1
+// b) Verify and explain: ---> Ruby because we called the index to start at 1. Javascript is stored in index 0.
 
 // --------------------4) What will this log?
 
@@ -45,12 +45,12 @@ const weekendDays = ["saturday", "sunday"]
 // console.log(weekendDays.toUpperCase())
 
 // a) Your answer: Saturday Sunday
-// b) Verify and explain: ---> weekendDays.toUpperCase is not a function                          
+// b) Verify and explain: ---> weekendDays.toUpperCase is not a function becuase you cannot perform a .toUpperCase on an array.                         
 
 // --------------------5) What will this log?
 
 const dataTypes = ["number", "string", "Boolean", "undefined"]
 // console.log(typeof dataTypes.length)
 
-// a) Your answer: number, string, boolean, undefined
-// b) Verify and explain: ---> Number there was no set end so it called the one and finished its job
+// a) Your answer: number
+// b) Verify and explain: ---> Number because number is the only datatype. 
