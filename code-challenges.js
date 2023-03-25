@@ -19,10 +19,10 @@ const fruit4 = "kiwi"
 // Expected outcome: "cherry"
 
 // --------------------1) Create a function that takes in a number and determines if the given number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below.
-// Psuedo 
+// Psuedo previous work
                 
 // const boilingPoint =  "212"
-// const numsArray = ["42", "350", "212"]
+// const numsArray = "42", "350", "212"
 
 // for (let boilingPoint = "212"; boilingPoint < numsArray; i++) {
 //   if (numsArray >= boilingPoint) {
@@ -45,27 +45,47 @@ const fruit4 = "kiwi"
 // const tempThree = 212
 
 // console.log(numsArray) 
-
-// Pseudo code:
-// creat function that takes in number and determine if the that number is below, at, or above boiling point using conditional statements. 
-// input: array
-// output: 
-                
-// const temperature1 = 42
-// Expected output: "42 is below boiling point"
-
-// const temperature2 = 350
-// Expected output: "350 is above boiling point"
-
-// const temperature3 = 212
-    // Expected output: "212 is at boiling point"
-
-    //output ---> nothing happened. it just logged blank. No errors but no output either. I worked this one issue for about 7 hours. and could not figure out why it just would not log anything not even an error. 
+ //output ---> nothing happened. it just logged blank. No errors but no output either. I worked this one issue for about 7 hours. and could not figure out why it just would not log anything not even an error. 
     // week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
     // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
     // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ node code-challenges.js  <-----
     // ➜  week-1-assessment-dmooredidit git:(week-1-assessment-dm) ✗ <-----
 
+// 
+
+    // Pseudo code: 
+// creat function named determine that takes in number and determine if the that number is below, at, or above boiling point using conditional statements. 
+// input: number
+// output: string that states if given number is below at or above boiling point
+// example: 
+// input 42 
+// output: "42 is below boiling point"
+// process: 
+// set up conditions that will return statements possible method conditional statements
+// these conditions will be comparing given number to boiling point. boiling point is 212
+// return given number in a string that states is above at or below boiling point
+
+const temperature1 = 42
+// Expected output: "42 is below boiling point"
+
+const temperature2 = 350
+// Expected output: "350 is above boiling point"
+
+const temperature3 = 212
+    // Expected output: "212 is at boiling point"
+
+    const determine = (number) => {
+        if(number === 212){
+            return `${number} is at boiling point`
+        } else if(number > 212){
+            return `${number} is above boiling point`
+        } else if(number < 212){
+            return `${number} is below boiling point`
+        }
+    }
+   console.log(determine(temperature1))
+   console.log(determine(temperature2))
+   console.log(determine(temperature3))
 
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
@@ -97,16 +117,18 @@ const fruit4 = "kiwi"
     // join
 
 const currentCohort = "Bravo 2023" 
+// change string into an array and stored in a variable because .split is an accesssor
+    // let cohortArray = currentCohort.split("")
 
-        // r = (currentCohort.split("")); (currentCohort.reverse(currentCohort)); (currentCohort).join
-        // c = (currentCohort.reverse(currentCohort))
-        // d = (currentCohort).join
-    
-        
-// console.log(r)
-    
+//  reverse order of values in the array variable not needed because .reverse is a mutator 
+    // console.log(cohortArray.reverse())
+// changing array into a string by .join values into a stringbased on location of spacing
+    // console.log(cohortArray.join(""))
 
-    // Expected output: "3202 ovarB"
+// refactored 
+console.log(currentCohort.split("").reverse().join(""))
+
+
 
     // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
@@ -163,4 +185,3 @@ const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
 
     
-

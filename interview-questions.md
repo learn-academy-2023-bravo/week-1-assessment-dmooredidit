@@ -30,12 +30,15 @@ Researched answer: The Boolean value of an expression of all comparisons and con
 
 Your answer: starting at 0, an index is simply the space that is "taken up" and is housing to a value. 
             Value is the actual data that lives in the index space.
-            Ex. [marcus, dandre, bobby, joshua, jose, jr,]
+            Ex. [marcus, dandre, bobby, joshua, jose, jr]
                             ^
 Index: 1
 Value: dandre
 
-Researched answer: Arrays are 
+Researched answer: To see a single value in an array you would reference the index number using bracket notation. 
+ex. let nameArray = [marcus, dandre, bobby, joshua, jose, jr]
+    console.log(nameArray[1])
+    output: dandre
 
 4. Compare and contrast arrays and strings. Please include ways in which they are the same and ways in which they are different.
 
